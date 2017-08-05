@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <title>Digitally Raised Creations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Biryani' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>  
+  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+<style>
+    body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+/*.jumbotron { 
+    background-color: darkorange;
+    color: white;
+    padding: 250px 25px;
+    font-family: Montserrat, sans-serif;
+      } */
+    
+/*Header and Vid Container*/
+.header-container {
+    width: 100%;
+    height: 700px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 250px 25px;
+        
+    }
+    
+.video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    }
+    
+video {
+    position: absolute;
+    z-index: -1; /* ensures vid positioned in the background, all elements will be on foreground*/
+    opacity: 0.80; 
+    width: 100%;
+    height: 900px
+    volume: 0;
+    }
+
+h1 { /*--section header--*/
+    color:black; 
+    font-family:Roboto Condensed;
+    font-weight: bold;
+    font-size: 48px;
+    }
+
+
+h2 { 
+    color:black; 
+    font-family:Roboto Condensed;
+    font-weight: normal;
+    font-size: 33px;
+    }
+
+h3 { /*--section header--*/
+    color:white; 
+    font-family:Roboto;
+    font-weight: normal;
+    font-size: 25px;
+    }
+    
+h4 { /*--section header--*/
+    color:white; 
+    font-family:Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    }
+    
+h5 /*-- HEADER TEXT --*/ {
+    color: white;
+    z-index: 1; /*be in foreground*/
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    letter-spacing: 3px;
+    font-size: 110px;
+    font-family: Roboto Condensed;
+    font-weight: 900;
+    }
+
+    
+body {
+      font: Roboto Condensed;
+      font-size: 25px;
+      line-height: 1.5;
+      
+      }
+      
+    p {
+        font-size: 18px;
+        font: Open Sans;
+        
+    }
+    
+    p1 { /*-- HEADER SUBTEXT --*/
+        font: Monteserrat, sans-serif;
+        color: white;
+        font-size: 22px;
+        font-weight: lighter;
+    
+    }
+    
+    p2 {
+        font-size: 20px;
+        
+    }
+    
+    p3 /*-- PRE-HEADER TEXT --*/{
+    
+    color: white;
+    z-index: 1; /*be in foreground*/
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20%;
+    letter-spacing: 3px;
+    font-size: 23px;
+    font-family: Roboto Condensed;
+    font-weight: lighter;
+    }
+
+    .margin {margin-bottom: 45px;}
+      
+    .bg-1 { 
+        color: blue;
+        /*background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)), url(underthesea.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+  
+    .bg-2 {
+              background-color: white;
+              color: darkorange;       
+       
+          }
+      
+    .bg-3 { /*  FOOTER { */
+              background-color: #2d2d30; /* Dark Blue */
+              color: #ffffff;
+          }
+      
+    .bg-4 {
+            background-image: url(CJdrinks.jpg);
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+    }
+    .bg-5 { /*  CONTACT US CONTAINER */
+              background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(purplelight.jpg);
+            background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+              color: white;
+      }
+    
+    .bg-6 { /* PORTFOLIO CONTAINER { */
+            background-color: white;
+        background-attachment: fixed;
+            color: black;
+    }
+    
+    .bg-7 {
+        background-image: url(computer.jpg);
+        background-size: 1440px 800px;
+        background-repeat: no-repeat;
+        color: black;
+        display: compact;
+       
+    }
+    
+    .bg-8 { /* SERVICES CONTAINER */
+        background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(greenlight.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+       
+    }
+    
+    .bg-9 { /* ABOUT US CONTAINER { */
+        background-image: url(lake.png);
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        background-position: right;
+    }
+        
+  
+    .container-fluid {
+          padding-top: 70px;
+          padding-bottom: 75px;
+          padding-left: 50px;
+          padding-right: 50px;
+      
+      }
+    
+    .container-fluid-1 {
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+    
+    .container-fluid-2 {
+        padding-top: -1px;
+        padding-bottom: 25px;
+    }
+    
+.resize {
+        height: 10%;
+        width: 20%;
+    }
+    
+       
+ .container-1 {
+    position: relative;
+    width: 100%;
+}
+    
+.image {
+opacity: 1;
+display: block;
+width: auto;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-1:hover .image {
+  opacity: 0.1;
+}
+
+.container-1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: clear;
+  color: black;
+  font-size: 20px;
+  padding: 32px 64px;
+}
+  
+    
+.container-2 {
+     position: relative;
+     display:table;
+   }
+    
+.align {
+     vertical-align: top;
+     display: table-cell;
+     position: relative;
+   }
+    
+    .logo {
+    font-size: 10px;
+      }
+      
+    .logo-medium {
+          font-size: 60px
+      }
+      
+    .thumbnail {
+          padding: 0 0 15px 0;
+          border: none;
+          border-radius: 0;
+      }
+      
+    .thumbnail img {
+          width: 70%;
+          height: 70%;
+          margin-bottom: 10px;
+      }
+    
+    footer .glyphicon {
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: dodgerblue;
+}
+    
+
+    
+    img.expand {
+        height:15cm
+    }  
+
+
+   a {
+       text-decoration: none; 
+    }
+    
+    i.mysize {
+        font-size: 0.80em;
+        color: white;
+        line-height:0.5;
+    }
+    
+    
+/* Add a background color */ 
+.navbar {
+      margin-bottom: 0;
+      background-color: white;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      opacity: 0.98;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: black !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: azure !important;
+      background-color: black !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: black !important;
+    }
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+    
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+    
+@media screen and (max-width: 768px) [
+          .col-sm-4 {
+              text-align: center;
+              margin: 25px 0;
+    
+      }
+    ]
+
+    </style>
+    </head>
+    
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+ <!--NAV BAR-->   
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home"> • HOME •</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ <!--HEADER-->
+<div class="container-fluid header-container">
+    <div class="video-container">
+    <video preload="true" autoplay="autoplay" loop muted poster="richard.png">
+        <source src="drcsite.mp4"type="video/mp4">
+        </video> 
+    </div> <!--end of vid-->
+    
+    <h5><p3 style="font-family: Roboto Condensed;">WE ARE</p3><br>DIGITALLY RAISED</h5>
+    <hr align="center" width="50%">
+    <div class="container-fluid-2 text-center">
+        <p1>raising your competitive edge in a highly digital world</p1><br>
+        <a href="#about" title="To About">
+    <i class="glyphicon glyphicon-chevron-down mysize"></i></a>
+
+    
+   
+    </div><!--end of header-->
+    </div>
+    
+
+    
+<!--ABOUT US-->
+    
+<div id="about" class="container-fluid bg-9">
+  <div class="row"> 
+    <!--<div class="col-sm-12">-->
+        <div class="col-sm-7">
+        <div class="section-title text-right">
+					<h1 class="heading bold">WHAT WE DO</h1>
+				<hr>
+				</div>
+      <p style="color:black; font-family:Open Sans;">For businesses that do not have the time or resources to manage their own social media,<strong> Digitally Raised</strong> is a digital branding consulting firm that empowers communication through creative content creation and online brand development. 
+</p><br>
+<!--    <div class="col-sm-4">-->
+<!--         <span class="glyphicon glyphicon-cloud logo slideanim"></span>-->
+            
+        <div class="section-title">
+            <h1 class="heading bold">WHO WE ARE</h1>
+                <hr>
+            </div>
+        <p style="color:black; font-family:Open Sans;"><strong>Digitally Raised</strong> is managed and executed by digital natives who emphasize on helping businesses effectively reach out to the modern consumer, helping businesses develop an advantage over their competitors.</p>
+      <br>
+            </div>
+      
+     
+    <!--<img class="resize" src=".jpg" alt="" align="right" width="150" height="250">-->
+    <!--<img src="background.jpg" alt="" style="float:right;width:250px;height:150px;"-->
+    
+    </div>
+    </div>
+<!-- </div>-->
+<!--</div>-->
+
+    
+
+
+    
+<!--SERVICES-->
+<div id="services" class="container-fluid bg-8 text-center">
+  <h1 style="color:white;"><strong>S E R V I C E S</strong></h1>
+    <p style="color:white; font-family:Open Sans;"><u>How</u> We Sharpen Your Competitive Edge</p>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-search logo-medium"></span>
+      <h3>Social Media Management</h3>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-bullhorn logo-medium"></span>
+      <h3>Creative Campaign Strategy</h3>
+    </div>
+       <div class="col-sm-4">
+      <span class="glyphicon glyphicon-list-alt logo-medium"></span>
+      <h3>Scheduling Postings on Media Platforms </h3><br>
+    </div>
+      <div class="col-sm-4">
+      <span class="glyphicon glyphicon-camera logo-medium"></span>
+      <h3>Content Ideation and Creation <br><h4>(Photography and Videography)</h4></h3>
+    </div>
+         <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-medium"></span>
+      <h3>Boosted Online Engagement</h3>
+      </div>
+       <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo-medium"></span>
+      <h3>Analytics and Reports</h3>
+    </div>
+
+      
+</div><br><br>
+    
+    <div class="col-sm-12">
+    <p1 style="font-size: 20px;"><i>For more details on how we can help you</i></p1><br>
+    <a href="#contact" class="btn btn-info" role="button">Schedule a Meeting</a>
+    </div>
+</div>
+    
+    
+<!--PORTFOLIO-->
+<div id="portfolio" class="container-fluid text-center bg-6">
+  <h1>P O R T F O L I O</h1>
+    <h4 style="color:black; font-family:Open Sans;">Choose By Category</h4>
+  <div class="row text-center slideanim">
+      <div class="col-sm-4">
+      <div class="thumbnail">
+     <a href="product.html" class="thumbnail" >
+         <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+        </div>
+          <div class="container-1">
+        <img src="pineapple.jpg" class="image" style="width:100%" alt="">
+            <div class="middle">
+                <div class="text"> <h2 style="color:black;"><strong>Product</strong></h2>
+         <!--<p class="text-muted" style="color:black;">--</p><br>-->
+                </div></div>
+            </div>
+    </a>
+    </div> 
+    </div>
+      
+    <div class="col-sm-4">
+      <div class="thumbnail">
+     <a href="lifestyle.html" class="thumbnail">
+         <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+        </div>
+         
+          <div class="container-1">
+        <img src="hhhollyhock.jpg" class="image" style="width:100%" alt="">
+            <div class="middle">
+                <div class="text"> <h2 style="color:black;"><strong>Lifestyle</strong></h2>
+          <!--<p class="text-muted" style="color:black;">--</p><br>-->
+                </div></div>
+            </div>
+    </a>
+    </div> 
+    </div>
+      
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <a href="technology.html" class="thumbnail">
+        <div class="caption">
+            <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+        </div>
+            
+       <div class="container-1">
+         <img src="reddrinks.jpg" alt="" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text"> <h2 style="color:black;"><strong>Technology</strong></h2>
+         <!--<p class="text-muted" style="color:black;">--</p><br>-->
+                </div></div>
+            </div>   
+    </a>
+    </div>  
+        
+    </div>
+</div>
+  </div>
+       
+    
+    
+<!--CONTACT US CONTAINER-->
+
+<div id="contact" class="container-fluid bg-5">
+  <br><h1 class="text-center" style="color:white;">C O N T A C T</h1><br><br><br>
+  <div class="row">
+    <div class="col-sm-5 text-center">
+      <p style="font-family:Roboto; font-size: 20px;">Want our help? Want to learn more?<br>
+          Reach out and let's connect. <br> We'll get back to you as soon as possible!</p>
+      <p1><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC</p1><br>
+      <p1><span class="glyphicon glyphicon-phone"></span> Google Voice </p1><br>
+      <p1><span class="glyphicon glyphicon-envelope"></span>  contact@digitallyraised.com</p1> 
+    </div>
+      
+
+      <form action="mailto:contact@digitallyraised.com" method="post" enctype="text/plain">
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name " placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email " placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="message" name="message " placeholder="Message" rows="8"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+          </div>
+      </form>
+  </div>
+</div>
+    
+<!--FOOTER-->
+<footer class="container-fluid-1 bg-3 text-center">
+    <a href="#home" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span></a>
+         
+      </footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+
+ $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+
+</script>
+    
+</body>
+</html>
