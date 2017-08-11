@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
   <title>Digitally Raised Creations</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Biryani' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>  
-  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>    
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,7 +34,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -51,7 +42,7 @@ $(document).ready(function(){
   });
 });
 </script>
-    
+
 <style>
     body, html, .main {
     height: 100%;
@@ -60,13 +51,13 @@ $(document).ready(function(){
 section {
     min-height: 100%;
 }
-/*.jumbotron { 
+/*.jumbotron {
     background-color: darkorange;
     color: white;
     padding: 250px 25px;
     font-family: Montserrat, sans-serif;
       } */
-    
+
 /*Header and Vid Container*/
 .header-container {
     width: 100%;
@@ -75,9 +66,9 @@ section {
     border-right: none;
     position: relative;
     padding: 250px 25px;
-        
+
     }
-    
+
 .video-container {
     position: absolute;
     top: 0%;
@@ -86,45 +77,78 @@ section {
     width: 100%;
     overflow: hidden;
     }
-    
+
 video {
     position: absolute;
     z-index: -1; /* ensures vid positioned in the background, all elements will be on foreground*/
-    opacity: 0.80; 
+    opacity: 0.80;
     width: 100%;
     height: 900px
     volume: 0;
     }
 
 h1 { /*--section header--*/
-    color:black; 
-    font-family:Roboto Condensed;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 48px;
     }
 
+#boldhead {
+  font-size: 28px;
+  color: #616161;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
 
-h2 { 
-    color:black; 
-    font-family:Roboto Condensed;
+#sectionhead {
+  color: #616161;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+
+h2 {
+    color:black;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 33px;
     }
 
+#productlabel {
+  color: #616161;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+}
+
 h3 { /*--section header--*/
-    color:white; 
-    font-family:Roboto;
-    font-weight: normal;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 25px;
     }
-    
+
+#serviceitems {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+
 h4 { /*--section header--*/
-    color:white; 
-    font-family:Roboto;
-    font-weight: normal;
+    color: #616161;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     }
-    
+
+#chooseby {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
 h5 /*-- HEADER TEXT --*/ {
     color: white;
     z-index: 1; /*be in foreground*/
@@ -134,78 +158,97 @@ h5 /*-- HEADER TEXT --*/ {
     margin-top: 10%;
     letter-spacing: 3px;
     font-size: 110px;
-    font-family: Roboto Condensed;
-    font-weight: 900;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
     }
 
-    
+
 body {
-      font: Roboto Condensed;
-      font-size: 25px;
-      line-height: 1.5;
-      
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.8;
+
       }
-      
+
     p {
-        font-size: 18px;
-        font: Open Sans;
-        
+        color: #616161;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+
     }
-    
+
+    #page-desc {
+      font-size: 18px;
+      line-height: 1.6em;
+    }
+
     p1 { /*-- HEADER SUBTEXT --*/
-        font: Monteserrat, sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: white;
-        font-size: 22px;
-        font-weight: lighter;
-    
+        font-size: 18px;
+        font-weight: 400;
+
     }
-    
+
+    #bottomcaption {
+      display: block;
+      font-size: 18px;
+      line-height: 1.6em;
+    }
+
+    #slogan {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
     p2 {
         font-size: 20px;
-        
+
     }
-    
+
     p3 /*-- PRE-HEADER TEXT --*/{
-    
+
     color: white;
     z-index: 1; /*be in foreground*/
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20%;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     font-size: 23px;
-    font-family: Roboto Condensed;
-    font-weight: lighter;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
     }
 
     .margin {margin-bottom: 45px;}
-      
-    .bg-1 { 
+
+    .bg-1 {
         color: blue;
         /*background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)), url(underthesea.jpg);*/
         background-repeat: no-repeat;
         background-size: cover;
       }
 
-  
+
     .bg-2 {
               background-color: white;
-              color: darkorange;       
-       
+              color: darkorange;
+
           }
-      
+
     .bg-3 { /*  FOOTER { */
-              background-color: #2d2d30; /* Dark Blue */
+              background-color: #616161; /* Dark Blue */
               color: #ffffff;
           }
-      
+
     .bg-4 {
             background-image: url(CJdrinks.jpg);
             color: white;
             background-repeat: no-repeat;
             background-size: cover;
-            
+
     }
     .bg-5 { /*  CONTACT US CONTAINER */
               background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(purplelight.jpg);
@@ -214,30 +257,30 @@ body {
         background-attachment: fixed;
               color: white;
       }
-    
+
     .bg-6 { /* PORTFOLIO CONTAINER { */
             background-color: white;
         background-attachment: fixed;
             color: black;
     }
-    
+
     .bg-7 {
         background-image: url(computer.jpg);
         background-size: 1440px 800px;
         background-repeat: no-repeat;
         color: black;
         display: compact;
-       
+
     }
-    
+
     .bg-8 { /* SERVICES CONTAINER */
         background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url(greenlight.jpg);
         background-size: cover;
         background-attachment: fixed;
         color: white;
-       
+
     }
-    
+
     .bg-9 { /* ABOUT US CONTAINER { */
         background-image: url(lake.png);
         background-attachment: fixed;
@@ -246,37 +289,37 @@ body {
 
         background-position: right;
     }
-        
-  
+
+
     .container-fluid {
           padding-top: 70px;
           padding-bottom: 75px;
           padding-left: 50px;
           padding-right: 50px;
-      
+
       }
-    
+
     .container-fluid-1 {
         padding-top: 5px;
         padding-bottom: 25px;
     }
-    
+
     .container-fluid-2 {
         padding-top: -1px;
         padding-bottom: 25px;
     }
-    
+
 .resize {
         height: 10%;
         width: 20%;
     }
-    
-       
+
+
  .container-1 {
     position: relative;
     width: 100%;
 }
-    
+
 .image {
 opacity: 1;
 display: block;
@@ -310,151 +353,184 @@ backface-visibility: hidden;
   font-size: 20px;
   padding: 32px 64px;
 }
-  
-    
+
+
 .container-2 {
      position: relative;
      display:table;
    }
-    
+
 .align {
      vertical-align: top;
      display: table-cell;
      position: relative;
    }
-    
+
     .logo {
     font-size: 10px;
       }
-      
+
     .logo-medium {
           font-size: 60px
       }
-      
+
     .thumbnail {
           padding: 0 0 15px 0;
           border: none;
           border-radius: 0;
       }
-      
+
     .thumbnail img {
           width: 70%;
           height: 70%;
           margin-bottom: 10px;
       }
-    
+
     footer .glyphicon {
     font-size: 18px;
+    margin-top: 5px;
     margin-bottom: 0px;
-    color: dodgerblue;
+    color: #ffffff;
 }
-    
 
-    
+
+
     img.expand {
         height:15cm
-    }  
+    }
 
 
    a {
-       text-decoration: none; 
+       text-decoration: none;
     }
-    
+
     i.mysize {
         font-size: 0.80em;
         color: white;
         line-height:0.5;
     }
-    
-    
-/* Add a background color */ 
+
+
+/* Add a background color */
+
+
+.navbar-brand g:hover {
+color: #999999;
+fill: #999999;
+}
+
+.navbar-brand {
+height: 75px;
+padding-top: 0px;
+}
+
 .navbar {
+      padding-top: 25px;
       margin-bottom: 0;
       background-color: white;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
-      line-height: 1.42857143 !important;
+      line-height: 1px !important;
       letter-spacing: 4px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: 'Montserrat' ,sans-serif;
       opacity: 0.98;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: black !important;
+      vertical-align: middle !important;
+      color: #616161 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: azure !important;
-      background-color: black !important;
+    background-color: white !important;
+    vertical-align: middle !important;
+    color: #616161 !important;
+    font-weight: 700;
   }
   .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: black !important;
+      background-color: white !important;
     }
 
 .slideanim {visibility:hidden;}
 .slide {
     /* The name of the animation */
     animation-name: slide;
-    -webkit-animation-name: slide; 
+    -webkit-animation-name: slide;
     /* The duration of the animation */
-    animation-duration: 1s; 
+    animation-duration: 1s;
     -webkit-animation-duration: 1s;
     /* Make the element visible */
-    visibility: visible; 
+    visibility: visible;
 }
-    
+
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
     0% {
         opacity: 0;
         transform: translateY(70%);
-    } 
+    }
     100% {
         opacity: 1;
         transform: translateY(0%);
-    } 
+    }
 }
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
-    } 
+    }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
 }
-    
+
 @media screen and (max-width: 768px) [
           .col-sm-4 {
               text-align: center;
               margin: 25px 0;
-    
+
       }
     ]
 
     </style>
     </head>
-    
+
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 
- <!--NAV BAR-->   
+ <!--NAV BAR-->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#home"> • HOME •</a>
+      <a class="navbar-brand" href="#home"><svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 283.464 283.466" enable-background="new 0 0 283.464 283.466"
+	 xml:space="preserve" style="margin-right:-200px;margin-top:-5px;">
+  <g>
+	<polygon fill="#616161" points="152.69,261.212 152.69,223.73 130.106,223.73 130.106,261.212 105.185,261.212 105.185,283.466
+		130.106,283.466 152.69,283.466 177.943,283.466 177.943,261.212 	"/>
+	<polygon fill="#616161" points="260.876,0 22.588,0 0,0 0,22.255 0,179.391 0,201.638 0,201.649 107.846,201.649 107.846,179.391
+		22.588,179.391 22.588,22.255 260.876,22.255 260.876,179.391 175.608,179.391 175.608,201.649 283.464,201.649 283.464,201.638
+		283.464,179.391 283.464,22.255 283.464,0 	"/>
+	<polygon fill="#616161" points="107.858,51.415 45.175,51.415 45.175,73.665 107.858,73.665 107.858,127.969 45.175,127.969
+		45.175,150.224 107.858,150.224 130.438,150.224 130.438,127.969 130.438,73.665 130.438,51.415 	"/>
+	<polygon fill="#616161" points="238.292,51.415 175.616,51.415 153.023,51.415 153.023,73.665 153.023,150.224 175.616,150.224
+		175.616,73.665 238.292,73.665 	"/>
+	<path fill="#616161" d="M141.569,177.167c-7.486,0-13.558,5.978-13.558,13.344c0,7.373,6.071,13.351,13.558,13.351
+		c7.478,0,13.548-5.979,13.548-13.351C155.117,183.144,149.047,177.167,141.569,177.167"/>
+  </g>
+</svg></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -470,104 +546,122 @@ backface-visibility: hidden;
     <div class="video-container">
     <video preload="true" autoplay="autoplay" loop muted poster="richard.png">
         <source src="drcsite.mp4"type="video/mp4">
-        </video> 
+        </video>
     </div> <!--end of vid-->
-    
-    <h5><p3 style="font-family: Roboto Condensed;">WE ARE</p3><br>DIGITALLY RAISED</h5>
+
+    <svg version="1.1" id="logotop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="20%" height="20%" viewBox="0 0 283.464 283.466" enable-background="new 0 0 283.464 283.466"
+ xml:space="preserve" style="display:block;margin:auto;margin-top:90px;margin-bottom:-140px;">
+<g>
+<polygon fill="#ffffff" points="152.69,261.212 152.69,223.73 130.106,223.73 130.106,261.212 105.185,261.212 105.185,283.466
+  130.106,283.466 152.69,283.466 177.943,283.466 177.943,261.212 	"/>
+<polygon fill="#ffffff" points="260.876,0 22.588,0 0,0 0,22.255 0,179.391 0,201.638 0,201.649 107.846,201.649 107.846,179.391
+  22.588,179.391 22.588,22.255 260.876,22.255 260.876,179.391 175.608,179.391 175.608,201.649 283.464,201.649 283.464,201.638
+  283.464,179.391 283.464,22.255 283.464,0 	"/>
+<polygon fill="#ffffff" points="107.858,51.415 45.175,51.415 45.175,73.665 107.858,73.665 107.858,127.969 45.175,127.969
+  45.175,150.224 107.858,150.224 130.438,150.224 130.438,127.969 130.438,73.665 130.438,51.415 	"/>
+<polygon fill="#ffffff" points="238.292,51.415 175.616,51.415 153.023,51.415 153.023,73.665 153.023,150.224 175.616,150.224
+  175.616,73.665 238.292,73.665 	"/>
+<path fill="#ffffff" d="M141.569,177.167c-7.486,0-13.558,5.978-13.558,13.344c0,7.373,6.071,13.351,13.558,13.351
+  c7.478,0,13.548-5.979,13.548-13.351C155.117,183.144,149.047,177.167,141.569,177.167"/>
+</g>
+</svg>
+
+    <h5><p3>WE ARE</p3><br>DIGITALLY RAISED</h5>
     <hr align="center" width="50%">
     <div class="container-fluid-2 text-center">
-        <p1>raising your competitive edge in a highly digital world</p1><br>
-        <a href="#about" title="To About">
+        <p1 id="slogan"><b>Level up</b> your competitive edge in a highly digital world.</p1><br>
+        <a style="display:block;margin-bottom:7px" href="#about" title="To About">
     <i class="glyphicon glyphicon-chevron-down mysize"></i></a>
 
-    
-   
+
+
     </div><!--end of header-->
     </div>
-    
 
-    
+
+
 <!--ABOUT US-->
-    
+
 <div id="about" class="container-fluid bg-9">
-  <div class="row"> 
+  <div class="row">
     <!--<div class="col-sm-12">-->
         <div class="col-sm-7">
         <div class="section-title text-right">
-					<h1 class="heading bold">WHAT WE DO</h1>
+					<h1 id="boldhead" class="heading bold">WHAT WE DO</h1>
 				<hr>
 				</div>
-      <p style="color:black; font-family:Open Sans;">For businesses that do not have the time or resources to manage their own social media,<strong> Digitally Raised</strong> is a digital branding consulting firm that empowers communication through creative content creation and online brand development. 
+      <p id="page-desc">For businesses that do not have the time or resources to manage their own social media,<strong> Digitally Raised</strong> is a digital branding consulting firm that empowers communication through creative content creation and online brand development.
 </p><br>
 <!--    <div class="col-sm-4">-->
 <!--         <span class="glyphicon glyphicon-cloud logo slideanim"></span>-->
-            
+
         <div class="section-title">
-            <h1 class="heading bold">WHO WE ARE</h1>
+            <h1 id="boldhead" class="heading bold">WHO WE ARE</h1>
                 <hr>
             </div>
-        <p style="color:black; font-family:Open Sans;"><strong>Digitally Raised</strong> is managed and executed by digital natives who emphasize on helping businesses effectively reach out to the modern consumer, helping businesses develop an advantage over their competitors.</p>
+        <p id="page-desc"><strong>Digitally Raised</strong> is managed and executed by digital natives who emphasize on helping businesses effectively reach out to the modern consumer, helping businesses develop an advantage over their competitors.</p>
       <br>
             </div>
-      
-     
+
+
     <!--<img class="resize" src=".jpg" alt="" align="right" width="150" height="250">-->
     <!--<img src="background.jpg" alt="" style="float:right;width:250px;height:150px;"-->
-    
+
     </div>
     </div>
 <!-- </div>-->
 <!--</div>-->
 
-    
 
 
-    
+
+
 <!--SERVICES-->
 <div id="services" class="container-fluid bg-8 text-center">
-  <h1 style="color:white;"><strong>S E R V I C E S</strong></h1>
-    <p style="color:white; font-family:Open Sans;"><u>How</u> We Sharpen Your Competitive Edge</p>
+  <h1 id="sectionhead" style="color:white;"><strong>SERVICES</strong></h1>
+    <p id="page-desc" style="color:#ffffff">How we can sharpen your competitve edge</p>
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-search logo-medium"></span>
-      <h3>Social Media Management</h3>
+      <h3 id="serviceitems">Social Media Management</h3>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-bullhorn logo-medium"></span>
-      <h3>Creative Campaign Strategy</h3>
+      <h3 id="serviceitems">Creative Campaign Strategy</h3>
     </div>
        <div class="col-sm-4">
       <span class="glyphicon glyphicon-list-alt logo-medium"></span>
-      <h3>Scheduling Postings on Media Platforms </h3><br>
+      <h3 id="serviceitems">Scheduling Postings on Media Platforms </h3><br>
     </div>
       <div class="col-sm-4">
       <span class="glyphicon glyphicon-camera logo-medium"></span>
-      <h3>Content Ideation and Creation <br><h4>(Photography and Videography)</h4></h3>
+      <h3 id="serviceitems">Content Ideation and Creation <br>(Photography and Videography)</h3>
     </div>
          <div class="col-sm-4">
       <span class="glyphicon glyphicon-user logo-medium"></span>
-      <h3>Boosted Online Engagement</h3>
+      <h3 id="serviceitems">Boosted Online Engagement</h3>
       </div>
        <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo-medium"></span>
-      <h3>Analytics and Reports</h3>
+      <h3 id="serviceitems">Analytics and Reports</h3>
     </div>
 
-      
+
 </div><br><br>
-    
+
     <div class="col-sm-12">
-    <p1 style="font-size: 20px;"><i>For more details on how we can help you</i></p1><br>
+    <p1 id="bottomcaption" style="font-size: 20px;">For more details on how we can help you</p1><br>
     <a href="#contact" class="btn btn-info" role="button">Schedule a Meeting</a>
     </div>
 </div>
-    
-    
+
+
 <!--PORTFOLIO-->
 <div id="portfolio" class="container-fluid text-center bg-6">
-  <h1>P O R T F O L I O</h1>
-    <h4 style="color:black; font-family:Open Sans;">Choose By Category</h4>
+  <h1 id="sectionhead">PORTFOLIO</h1>
+    <h4 id="chooseby">Choose By Category</h4>
   <div class="row text-center slideanim">
       <div class="col-sm-4">
       <div class="thumbnail">
@@ -580,14 +674,14 @@ backface-visibility: hidden;
           <div class="container-1">
         <img src="pineapple.jpg" class="image" style="width:100%" alt="">
             <div class="middle">
-                <div class="text"> <h2 style="color:black;"><strong>Product</strong></h2>
+                <div class="text"> <h2 id="productlabel"><strong>Product</strong></h2>
          <!--<p class="text-muted" style="color:black;">--</p><br>-->
                 </div></div>
             </div>
     </a>
-    </div> 
     </div>
-      
+    </div>
+
     <div class="col-sm-4">
       <div class="thumbnail">
      <a href="lifestyle.html" class="thumbnail">
@@ -596,18 +690,18 @@ backface-visibility: hidden;
                 <i class="fa fa-search-plus fa-3x"></i>
             </div>
         </div>
-         
+
           <div class="container-1">
         <img src="hhhollyhock.jpg" class="image" style="width:100%" alt="">
             <div class="middle">
-                <div class="text"> <h2 style="color:black;"><strong>Lifestyle</strong></h2>
+                <div class="text"> <h2 id="productlabel"><strong>Lifestyle</strong></h2>
           <!--<p class="text-muted" style="color:black;">--</p><br>-->
                 </div></div>
             </div>
     </a>
-    </div> 
     </div>
-      
+    </div>
+
     <div class="col-sm-4">
       <div class="thumbnail">
         <a href="technology.html" class="thumbnail">
@@ -616,36 +710,36 @@ backface-visibility: hidden;
                 <i class="fa fa-search-plus fa-3x"></i>
             </div>
         </div>
-            
+
        <div class="container-1">
          <img src="reddrinks.jpg" alt="" class="image" style="width:100%">
             <div class="middle">
-                <div class="text"> <h2 style="color:black;"><strong>Technology</strong></h2>
+                <div class="text"> <h2 id="productlabel"><strong>Technology</strong></h2>
          <!--<p class="text-muted" style="color:black;">--</p><br>-->
                 </div></div>
-            </div>   
+            </div>
     </a>
-    </div>  
-        
+    </div>
+
     </div>
 </div>
   </div>
-       
-    
-    
+
+
+
 <!--CONTACT US CONTAINER-->
 
 <div id="contact" class="container-fluid bg-5">
-  <br><h1 class="text-center" style="color:white;">C O N T A C T</h1><br><br><br>
+  <br><h1 id="sectionhead" class="text-center" style="color:white;">CONTACT</h1><br><br><br>
   <div class="row">
     <div class="col-sm-5 text-center">
-      <p style="font-family:Roboto; font-size: 20px;">Want our help? Want to learn more?<br>
+      <p id="page-desc" style="color:white">Want our help? Want to learn more?<br>
           Reach out and let's connect. <br> We'll get back to you as soon as possible!</p>
       <p1><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC</p1><br>
       <p1><span class="glyphicon glyphicon-phone"></span> Google Voice </p1><br>
-      <p1><span class="glyphicon glyphicon-envelope"></span>  contact@digitallyraised.com</p1> 
+      <p1><span class="glyphicon glyphicon-envelope"></span>  contact@digitallyraised.com</p1>
     </div>
-      
+
 
       <form action="mailto:contact@digitallyraised.com" method="post" enctype="text/plain">
     <div class="col-sm-6">
@@ -662,17 +756,17 @@ backface-visibility: hidden;
         <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
-      </div> 
+      </div>
           </div>
       </form>
   </div>
 </div>
-    
+
 <!--FOOTER-->
 <footer class="container-fluid-1 bg-3 text-center">
     <a href="#home" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span></a>
-         
+
       </footer>
 
 <script>
@@ -715,6 +809,6 @@ $(document).ready(function(){
 
 
 </script>
-    
+
 </body>
 </html>
